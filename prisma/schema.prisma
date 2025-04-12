@@ -11,11 +11,6 @@ generator client {
 }
 
 model Result {
-  evmAddress String   @id
-  gender     String
-  language   String
-  character  String
-  records    Json?
-  nft        String
-  createdAt  DateTime @default(now())
+  id        String   @id @default(uuid(7))
+  createdAt DateTime @default(now())
 }

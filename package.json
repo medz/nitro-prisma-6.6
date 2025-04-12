@@ -7,7 +7,9 @@
     "postinstall": "nitro prepare"
   },
   "dependencies": {
-    "@prisma/client": "^6.6.0"
+    "@prisma/adapter-d1": "^6.6.0",
+    "@prisma/client": "^6.6.0",
+    "wrangler": "^4.10.0"
   },
   "devDependencies": {
     "nitro-cloudflare-dev": "^0.2.2",
