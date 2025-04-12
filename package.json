@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nitro dev",
+    "build": "nitro build",
+    "postinstall": "nitro prepare"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0"
+  },
+  "devDependencies": {
+    "nitro-cloudflare-dev": "^0.2.2",
+    "nitropack": "^2.11.9",
+    "prisma": "^6.6.0"
+  }
+}

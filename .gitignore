@@ -1,0 +1,5 @@
+.nitro
+.output
+.wrangler
+node_modules
+prisma/client

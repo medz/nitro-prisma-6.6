@@ -1,0 +1,21 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider        = "prisma-client"
+  output          = "./client/"
+  previewFeatures = ["driverAdapters"]
+  runtime         = "cloudflare"
+}
+
+model Result {
+  evmAddress String   @id
+  gender     String
+  language   String
+  character  String
+  records    Json?
+  nft        String
+  createdAt  DateTime @default(now())
+}
